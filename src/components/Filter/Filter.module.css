@@ -1,5 +1,6 @@
 .filter__input {
     display: block;
+    margin: 0 auto;
 }
 
 .label {
