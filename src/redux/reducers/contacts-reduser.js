@@ -12,7 +12,7 @@ const initContacts = [
   { id: 'id-8', name: 'John Connor', number: '100-09-92' },
 ];
 
-export default createReducer(initContacts, {
+export const contactsReduser = createReducer(initContacts, {
   [addContact]: (state, action) => [action.payload, ...state],
   [deleteContact]: (state, action) =>
     state.filter(({ id }) => id !== action.payload),
